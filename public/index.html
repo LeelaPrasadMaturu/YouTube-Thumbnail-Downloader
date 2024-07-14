@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Thumbnail Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="animated fadeIn">
+        <h1 class="animated bounce">YouTube Thumbnail Downloader</h1>
+        <form id="youtubeForm">
+            <label for="videoUrl">YouTube Video URL:</label>
+            <input type="text" id="videoUrl" placeholder="Enter YouTube video URL">
+            <button type="button" onclick="getThumbnails()" class="animated pulse">Get Thumbnails</button>
+        </form>
+        <div id="thumbnails" class="animated slideInUp"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

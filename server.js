@@ -23,6 +23,10 @@ app.get('/thumbnails',async(req,res)=>{
     }
 });
 
+app.get('/google5b9f50082480c026.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'google5b9f50082480c026.html'));
+});
+
 app.use(express.static('public'));
 
 app.get('/',(req,res)=>{

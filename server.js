@@ -27,6 +27,10 @@ app.get('/google5b9f50082480c026.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'google5b9f50082480c026.html'));
 });
 
+app.get('/sitemap.xml',(req,res) => {
+    res.sendFile(path.join(__dirname, 'sitemap.xml'));
+});
+
 app.use(express.static('public'));
 
 app.get('/',(req,res)=>{

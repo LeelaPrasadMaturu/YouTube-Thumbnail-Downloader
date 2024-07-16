@@ -8,10 +8,6 @@ const apiKey = process.env.API_KEY;
 
 app.get('/thumbnails',async(req,res)=>{
     const videoId = req.query.videoId;
-
-    const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`;
-    await axios.get(apiUrl)
-    
     try {
         const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`;
         const response = await axios.get(apiUrl);

@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Thumbnail Downloader</title>
+    <title>Free YouTube Thumbnail Downloader - Download HD Thumbnails</title>
+    <meta name="description" content="Easily download YouTube thumbnails in HD quality. Enter the YouTube video URL and get the thumbnails instantly.">
+    <meta name="keywords" content="YouTube Thumbnail Downloader, Download YouTube Thumbnails, HD Thumbnails, Free YouTube Downloader">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app" class="animated fadeIn">
-        <h1 class="animated bounce">YouTube Thumbnail Downloader</h1>
+    <div id="app">
+        <h1>YouTube Thumbnail Downloader</h1>
+        <p>Download YouTube video thumbnails in high quality. Just enter the URL of the YouTube video below to get started.</p>
         <form id="youtubeForm">
             <label for="videoUrl">YouTube Video URL:</label>
             <input type="text" id="videoUrl" placeholder="Enter YouTube video URL">
-            <button type="button" onclick="getThumbnails()" class="animated pulse">Get Thumbnails</button>
+            <button type="button" onclick="getThumbnails()">Get Thumbnails</button>
         </form>
-        <div id="thumbnails" class="animated slideInUp"></div>
+        <div id="thumbnails"></div>
     </div>
     <script src="script.js"></script>
 </body>
